@@ -17,50 +17,13 @@ includes:
 search: true
 ---
 
-# API Intro
+# COASTNET API documentation
 
-This documentation will provide all necessary information about the available API endpoints and data types, so that you can integrate with your resorces effortlessly.
+Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
-The API documentation will gide you on how to request the available data and which filters are available for each query.
+We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-You will be able to find code snipest in Shell, Golang, PHP, and JavaScript! that will be usefull to get you started. You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
-# Available Data types
-
-| Parameter    | Default | Description                                                                      |
-| ------------ | ------- | -------------------------------------------------------------------------------- |
-| include_cats | false   | If set to true, the result will also include cats.                               |
-| available    | true    | If set to false, the result will include kittens that have already been adopted. |
-
-## Satelite
-
-| Parameter    | Default | Description                                                                      |
-| ------------ | ------- | -------------------------------------------------------------------------------- |
-| include_cats | false   | If set to true, the result will also include cats.                               |
-| available    | true    | If set to false, the result will include kittens that have already been adopted. |
-
-## Sensors
-
-| Parameter    | Default | Description                                                                      |
-| ------------ | ------- | -------------------------------------------------------------------------------- |
-| include_cats | false   | If set to true, the result will also include cats.                               |
-| available    | true    | If set to false, the result will include kittens that have already been adopted. |
-
-## History
-
-| Parameter    | Default | Description                                                                      |
-| ------------ | ------- | -------------------------------------------------------------------------------- |
-| include_cats | false   | If set to true, the result will also include cats.                               |
-| available    | true    | If set to false, the result will include kittens that have already been adopted. |
-
-# Metadata
-
-| Parameter    | Default | Default2 | Description                                                                      |
-| ------------ | ------- | -------- | -------------------------------------------------------------------------------- |
-| include_cats | false   | false    | If set to true, the result will also include cats.                               |
-| available    | false   | true     | If set to false, the result will include kittens that have already been adopted. |
-
-# Filters
+This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
 # Authentication
 
@@ -102,9 +65,9 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# EndPoints
+# Kittens
 
-## Get All Data
+## Get All Kittens
 
 ```ruby
 require 'kittn'
@@ -170,7 +133,7 @@ This endpoint retrieves all kittens.
 Remember — a happy kitten is an authenticated kitten!
 </aside>
 
-## Get a Specific Data
+## Get a Specific Kitten
 
 ```ruby
 require 'kittn'
@@ -224,7 +187,7 @@ This endpoint retrieves a specific kitten.
 | --------- | -------------------------------- |
 | ID        | The ID of the kitten to retrieve |
 
-## Delete a Specific Data
+## Delete a Specific Kitten
 
 ```ruby
 require 'kittn'
@@ -273,15 +236,3 @@ This endpoint deletes a specific kitten.
 | Parameter | Description                    |
 | --------- | ------------------------------ |
 | ID        | The ID of the kitten to delete |
-
-# Export Types
-
-## Json
-
-## CSV
-
-## netcdf
-
-# Integrations
-
-## Qgis
